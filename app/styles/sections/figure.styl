@@ -1,0 +1,53 @@
+.slider
+    background #f2f2f2
+    height 400px
+    margin-bottom 1em
+    overflow hidden
+    .content
+        display inline-block
+        vertical-align middle
+        margin 1em
+        max-width 30%
+    img
+        max-width 65%
+
+h2.title
+    margin 1em 0
+    font-weight 300
+    font-size 2em
+    text-align center
+    color $color-gray-normal
+
+figure
+    background #ffffff
+    border-radius .5em .5em 0 0
+    ul
+        margin: 1em 2em
+        list-style: none
+        height 120px
+        li:before
+            content: "\f00c"; /* FontAwesome Unicode */
+            font-family: FontAwesome;
+            display: inline-block;
+            width: 1.5em
+    img
+        border-radius .5em .5em 0 0
+    figcaption
+        text-align left
+        p
+            margin 1em 1.5em
+        .more
+            display block
+            text-align left
+            position relative
+            text-transform uppercase
+            font-size 15px
+            font-weight: 600
+            padding 15px 0 17px 26px
+            color #ffffff
+            overflow hidden
+            background $color-action
+            i
+                font-size 1.5em
+            &:hover
+                background darken($color-action, 10)

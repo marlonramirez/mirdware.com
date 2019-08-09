@@ -1,0 +1,23 @@
+font-face("OrbitronBold", "../fonts/orbitron-bold-webfont")
+
+body
+    background #05232E image-url("background-rep.jpg") repeat-x
+    margin-bottom 20px
+
+a
+    color #57ABB8
+    font-weight 700
+
+@import "icons"
+@import "header"
+@import "footer"
+
+.main
+    background-color #f2f2f2
+    padding 1em
+
+@media (max-width:1024px)
+    @import "tablets"
+
+@media(max-width:540px)
+    @import "smartphones"

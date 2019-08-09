@@ -1,0 +1,98 @@
+#main-header
+#content
+#main-footer
+    width 95%
+    margin 0 auto
+    text-align center
+
+#main-header
+    background image-url("header.jpg") no-repeat top left
+    .logo
+        margin -20px 0 20px 0
+        *width 280px
+        img
+            width 75%
+            max-width none /* Hack para ie8 http://ksesocss.blogspot.com/2012/03/bug-ie8-max-width-en-imagenes-las-hace.html */
+            float left /* eliminar espacios entre las imagenes */
+            &:first-child
+                width 25%
+                transition all .8s ease-in
+                -moz-transition all .8s ease-in
+                -webkit-transition all .8s ease-in
+                -o-transition all .8s ease-in
+        &:hover
+            img:first-child
+                transform rotate(180deg)
+                -webkit-transform rotate(180deg)
+                -moz-transform rotate(180deg)
+                -o-transform rotate(180deg)
+    nav
+    a
+        display inline-block
+        max-width 100%
+        vertical-align bottom
+        *zoom 1
+        *display inline
+    nav
+        width 60%
+        text-align right
+        ul
+            list-style none
+            li
+                display inline-block
+                vertical-align top
+                *zoom 1
+                *display inline
+        a
+            background-color #05232E
+            border-radius 5px 5px 0 0
+            color #fff
+            display block
+            font .9em 'OrbitronBold', Arial
+            padding .5em 1em
+            margin 0 .2em
+            &:hover
+                background-color #2175BC
+                text-shadow #000 1px 2px 2px
+                padding-bottom .7em
+                margin-top -.2em
+    .search
+        text-align right
+        padding 10px 40px 0 0
+        input[type="text"]
+            background #444
+            border 0 none
+            color #d7d7d7
+            width 10%
+            padding 6px 35px 6px 15px
+            -webkit-border-radius 20px
+            -moz-border-radius 20px
+            border-radius 20px
+            text-shadow 0 2px 2px rgba(0, 0, 0, 0.3)
+            -webkit-box-shadow 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset
+            -moz-box-shadow 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset
+            box-shadow 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset
+            -webkit-transition all 0.7s ease 0s
+            -moz-transition all 0.7s ease 0s
+            -o-transition all 0.7s ease 0s
+            transition all 0.7s ease 0s
+            &:focus
+                background #fcfcfc
+                color #6a6f75
+                width 15%
+                -webkit-box-shadow 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset
+                -moz-box-shadow 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset
+                box-shadow 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset
+                text-shadow 0 2px 3px rgba(0, 0, 0, 0.1)
+                & + button
+                    background-image image-url("search-dark.png")
+        button
+            border 0
+            width 15px
+            height 15px
+            background image-url("search-white.png") no-repeat
+            margin-left -30px
+            vertical-align middle
+            cursor pointer
+            *
+                visibility hidden

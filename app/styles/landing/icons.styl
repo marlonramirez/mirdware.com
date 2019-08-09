@@ -1,0 +1,8 @@
+$use-icons = twitter,
+            github,
+            plus,
+            code-fork
+
+for icon in $use-icons
+    .{$fa-css-prefix}-{icon}
+        fa-icon(icon)
