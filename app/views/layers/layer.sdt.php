@@ -3,9 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Empresa de desarrollo orientada a aplicaciones PHP y javascript" />
+    <meta name="keywords" content="mirdware,tecnologia,framework,desarrollo,sistemas.php,javascript,scoop,scalar,jetro" />
     <link rel="shortcut icon" type="image/x-icon" href="{#view->asset('favicon.ico')}" />
     <link rel="author" href="{#view->asset('humans.txt')}" />
     <link rel="stylesheet" href="{#view->css('scoop.min.css')}" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700&display=swap" rel="stylesheet" />
     <title>MirdWare</title>
 </head>
 
